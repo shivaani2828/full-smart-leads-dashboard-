@@ -1,16 +1,53 @@
-# React + Vite
+# GigFlow - Freelance Marketplace Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack freelance marketplace where clients can post gigs and freelancers can bid on them.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** [Vercel URL](https://account-manager-vite.vercel.app/)
+- **Backend API:** [Render URL](https://gigflow-qmpm.onrender.com/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### Core Features
+- ✅ **User Authentication** - Secure JWT-based auth with HttpOnly cookies
+- ✅ **Gig Management** - Full CRUD operations for job postings
+- ✅ **Search & Filter** - Search gigs by title
+- ✅ **Bidding System** - Freelancers can submit bids with message and price
+- ✅ **Hiring Workflow** - Atomic hiring logic with status updates
+
+### Bonus Features
+- ⭐ **MongoDB Transactions** - Race condition prevention during hiring
+- ⭐ **Real-time Notifications** - Socket.io for instant updates when hired
+- ⭐ **Responsive Design** - Mobile-friendly UI with Tailwind CSS
+
+### User Roles
+- **Client** - Post gigs, review bids, hire freelancers
+- **Freelancer** - Browse gigs, submit bids
+- **Fluid Roles** - Any user can be both client and freelancer
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework:** React 18 with Vite
+- **Styling:** Tailwind CSS
+- **State Management:** Context API
+- **Routing:** React Router v6
+- **HTTP Client:** Fetch API
+- **Icons:** Lucide React
+
+### Backend
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** MongoDB with Mongoose
+- **Authentication:** JWT with HttpOnly cookies
+- **Real-time:** Socket.io
+- **Security:** bcryptjs, cookie-parser, CORS
+
+### Deployment
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Database:** MongoDB Atlas
+
